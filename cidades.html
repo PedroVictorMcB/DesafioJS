@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS</title>
+</head>
+<body>
+    <body>
+        <h1>Combos Dependentes: Estado e Cidade</h1>
+    
+        <label for="estado">Selecione o Estado:</label>
+        <select id="estado" onchange="atualizarCidades()">
+            <option value="">Selecione...</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+    
+        <label for="cidade">Selecione a Cidade:</label>
+        <select id="cidade">
+            <option value="">Selecione um estado primeiro</option>
+        </select>
+        <script src="./mapCity.js"></script>
+</body>
+</html>
